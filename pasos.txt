@@ -1,0 +1,125 @@
+c:\laragon\www
+$ mkdir basic_repo
+
+c:\laragon\www
+$ cd basic_repo\
+
+c:\laragon\www\basic_repo
+$ git init
+Initialized empty Git repository in c:/laragon/www/basic_repo/.git/
+
+c:\laragon\www\basic_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c:\laragon\www\basic_repo (master)
+$ git add README.md
+
+c:\laragon\www\basic_repo (master)
+$ git commit -m "First Commit"
+[master (root-commit) ca05382] First Commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+
+c:\laragon\www\basic_repo (master)
+$ git remote add origin git@github.com:Claudiocolt/basic_repo.git
+
+c:\laragon\www\basic_repo (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 245 bytes | 245.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:Claudiocolt/basic_repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+c:\laragon\www\basic_repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c:\laragon\www\basic_repo (master)
+$ git add --all
+
+c:\laragon\www\basic_repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   index.html
+        new file:   styles.css
+
+
+c:\laragon\www\basic_repo (master)
+$ git commit -m "Inicializando un archivo HTML y un CSS"
+[master b12329d] Inicializando un archivo HTML y un CSS
+ 2 files changed, 15 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+c:\laragon\www\basic_repo (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 574 bytes | 574.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:Claudiocolt/basic_repo.git
+   ca05382..b12329d  master -> master
+
+c:\laragon\www\basic_repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+c:\laragon\www\basic_repo (master)
+$ git add .
+
+c:\laragon\www\basic_repo (master)
+$ git commit -m "agregando parrafo lorem ipsum"
+[master 5936adf] agregando parrafo lorem ipsum
+ 1 file changed, 2 insertions(+)
+
+c:\laragon\www\basic_repo (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 643 bytes | 643.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:Claudiocolt/basic_repo.git
+   b12329d..5936adf  master -> master
+
+c:\laragon\www\basic_repo (master)
+$ touch pasos.txt
